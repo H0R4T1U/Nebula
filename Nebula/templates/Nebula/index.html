@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>E site-ul meu</title>
+    <link rel="stylesheet" href="{% static '/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap">
+    <link rel="stylesheet" href="{% static '/css/Social-Icons.css' %}">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div id="iconDiv"><a class="icon" href="https://www.instagram.com/horatiubanciu/" target="_blank"><img src="{% static 'img/instagram.png' %}"></a><a class="icon" href="https://telegram.me/HoratiuG" target="_blank"><img src="{% static 'img/telly.png' %}"></a><a class="icon" href="#" target="_blank"><img src="{% static 'img/linkedin.png' %}" ></a><a class="icon" href="https://github.com/H0R4T1U" target="_blank"><img src="{% static 'img/github.png' %}"></a></div>
+    <section id="TextStuff" class="mb-5">
+        <h1><span class="txt-rotate" data-period="500" data-rotate="[ &quot;Student&quot;, &quot;Web Developer&quot; , &quot;Software Developer&quot;]">STUFF</span></h1>
+    </section>
+    <section id="CarouselStuff" class="mt-5" style="/*width: 50%;*/margin: auto;text-align: center;">
+        <h1>Curiculum Vitae</h1>
+        <div class="carousel slide mt-5" data-bs-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" style="margin-left: 1em;">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <p>Banciu&nbsp;Horaţiu</p>
+                                <p>horatiubanciu@protonmail.com</p>
+                                <p>0762 575 657</p>
+                            </div>
+                            <div class="col-md-6" style="text-align: center;">
+                                <p>High School Student</p>
+                                <p>17 years old</p>
+                                <p>tutor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <p>Problem Solving</p>
+                                <p>Critical thinking</p>
+                                <p>Creativity</p>
+                            </div>
+                            <div class="col-md-6" style="text-align: center;">
+                                <p>Perseverance</p>
+                                <p>Curiosity</p>
+                                <p>Resourceful</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center;">
+                                <p>Full stack Developer</p>
+                                <p>Networking</p>
+                                <p>Databases</p>
+                            </div>
+                            <div class="col-md-6" style="text-align: center;">
+                                <p>Python</p>
+                                <p>JavaScript</p>
+                                <p>C++</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" style="left: 0;margin: 0;top: 0;"></span><span class="visually-hidden" style="left: 0;margin: 0;top: 0;">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+            <ol class="carousel-indicators" style="display: none;">
+                <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+    <section id="GithubStuff">
+        <div class="table-responsive" >
+            <table class="table table-bordered" style="color: rgb(230, 228, 228);">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Language</th>
+                        <th>Description</th>
+                        <th>Stars</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for project in projects %}
+                    <tr>
+                        <td><a href={{project.url}} target='_blank'>{{project.name}}</a></td>
+                        <td>{{project.language}}</td>
+                        <td>{{project.description}}</td>
+                        <td>{{project.stars}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="{% static '/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/js/particles.min.js' %}"></script>
+    <script src="{% static '/js/typeWriter.js' %}"></script>
+    <script src="{% static '/js/index.js' %}"></script>
+</body>
+
+</html>
