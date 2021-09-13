@@ -4,5 +4,5 @@ from githubUpdater import github
 
 def start():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(github.update_github_data, 'interval', seconds=30)
+    scheduler.add_job(github.update_github_data, 'interval', minutes=5)
     scheduler.start()
