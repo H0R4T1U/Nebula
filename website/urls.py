@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from githubUpdater.updater import start
+
 urlpatterns = [
     path('',include('Nebula.urls')),
     path('admin/', admin.site.urls),
     
 ]
+
+start()
