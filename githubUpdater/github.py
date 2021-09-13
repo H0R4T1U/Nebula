@@ -1,4 +1,3 @@
-# scripts/github.py
 import requests
 from Nebula.models import Project
 
