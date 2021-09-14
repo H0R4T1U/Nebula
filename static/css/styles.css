@@ -52,7 +52,7 @@ canvas{
 #iconDiv {
   display: flex;
   position: fixed;
-  left: 10%;
+  left: 1%;
   flex-direction: column;
   height: 100%;
   /*align-items: center;*/
