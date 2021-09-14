@@ -72,6 +72,10 @@ a, a:link{
 a:hover{
   color: #0076ff;
 }
+.icon:hover{
+  opacity: 1;
+  filter: drop-shadow(0 0 0.50rem rgb(35,35,35));
+}
 @media (max-width:1399.98px) {
   html, body {
     font-size: 23px;
@@ -93,7 +97,7 @@ a:hover{
 
 @media (max-width:576px) {
   main, body {
-    font-size: 7px;
+    font-size: 9px;
     text-align: center;
   }
 }
