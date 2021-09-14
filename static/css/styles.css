@@ -52,7 +52,7 @@ canvas{
 #iconDiv {
   display: flex;
   position: fixed;
-  left: 0;
+  left: 10%;
   flex-direction: column;
   height: 100%;
   /*align-items: center;*/
@@ -100,12 +100,13 @@ a:hover{
     font-size: 9px;
     text-align: center;
   }
-}
-
-@media (max-width: 576px) {
   img {
     height: 24px;
     width: 24px;
   }
+}
+
+@media (max-width: 576px) {
+  
 }
 
