@@ -1,18 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Horaţiu Banciu</title>
-    <link rel="stylesheet" href="{% static '/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap">
-    <link rel="stylesheet" href="{% static '/css/Social-Icons.css' %}">
-    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
-</head>
-
-<body>
+{% extends "/layout.html" %}    
+{% block body %}
     <div id="particles-js"></div>
     <div id="iconDiv"><a class="icon" href="https://www.instagram.com/horatiubanciu/" target="_blank"><img src="{% static 'img/instagram.png' %}"></a><a class="icon" href="https://telegram.me/HoratiuG" target="_blank"><img src="{% static 'img/telly.png' %}"></a><a class="icon" href="#" target="_blank"><img src="{% static 'img/linkedin.png' %}" ></a><a class="icon" href="https://github.com/H0R4T1U" target="_blank"><img src="{% static 'img/github.png' %}"></a></div>
     <section id="TextStuff" class="mb-5">
@@ -103,10 +90,5 @@
             </table>
         </div>
     </section>
-    <script src="{% static '/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static '/js/particles.min.js' %}"></script>
-    <script src="{% static '/js/typeWriter.js' %}"></script>
-    <script src="{% static '/js/index.js' %}"></script>
-</body>
-
-</html>
+    
+{% endblock %}
