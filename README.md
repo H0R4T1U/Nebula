@@ -1,4 +1,4 @@
-# Website
+# Nebula
 My personal website that you can see on https://horatiubanciu.tech/
 
 ## How To Run
